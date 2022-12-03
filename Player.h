@@ -41,7 +41,7 @@ public:
      * @return
      *      Reference to the assigned player.
     */
-    &Player operator=(const Player &other);
+    Player& operator=(const Player &other);
 
     /*
      * D'tor of Player class
@@ -87,5 +87,5 @@ private:
     int m_maxHP;
     int m_HP;
     int m_coins;
-}
+};
 #endif // EX2_PLAYER_H

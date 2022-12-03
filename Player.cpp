@@ -1,4 +1,5 @@
 #include "Player.h"
+#include <string.h>
 /**
  *  char* m_name;
     int m_level;
@@ -40,7 +41,7 @@ Player &Player::operator=(const Player& other){
     if(this == &other){
         return *this;
     }
-    delete[] m_name
+    delete[] m_name;
     m_name = new char[strlen(other.m_name)+1];
     strcpy(m_name, other.m_name);
     m_level = other.m_level;
@@ -51,10 +52,10 @@ Player &Player::operator=(const Player& other){
     return *this;
 }
 Player::~Player(){
-    delete[m_name];
+    delete[] m_name;
 }
 void Player::printInfo() const{
-    printPlayerInfo(m_name, m_level, m_force, m_hp, m_coins);
+    printPlayerInfo(m_name, m_level, m_force, m_HP, m_coins);
 }
 
 void Player::levelUp()
