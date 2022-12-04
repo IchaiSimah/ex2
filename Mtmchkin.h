@@ -60,8 +60,10 @@ public:
     //TODO: complete the Mtmchkin class.
 
 private:
-    //TODO: complete the Mtmchkin class.
-
+  Player m_player;
+  Card* m_cards;
+  int m_numOfCards;
+  int m_actualCard = 0;
 };
 
 

@@ -23,7 +23,7 @@ public:
      * @return
      *      A new instance of Player.
     */
-    Player(char *name, int maxHP = 100, int force = 5);
+    Player(const char *name, int maxHP = 100, int force = 5);
 
     /*
      * copy C'tor of Player class

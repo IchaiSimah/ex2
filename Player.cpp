@@ -9,12 +9,12 @@
     int m_coins;
  *
  */
-Player::Player(char *name, int maxHP = DEFAULT_STARTING_HP, int force = DEFAULT_STARTING_FORCE) : m_name(new char[strlen(name) + 1]),
-                                                                                                  m_level(DEFAULT_STARTING_LEVEL),
-                                                                                                  m_force(force),
-                                                                                                  m_maxHP(maxHP),
-                                                                                                  m_HP(maxHP),
-                                                                                                  m_coins(DEFAULT_STARTING_COINS)
+Player::Player(const char *name, int maxHP, int force) : m_name(new char[strlen(name) + 1]),
+                                                   m_level(DEFAULT_STARTING_LEVEL),
+                                                   m_force(force),
+                                                   m_maxHP(maxHP),
+                                                   m_HP(maxHP),
+                                                   m_coins(DEFAULT_STARTING_COINS)
 {
     strcpy(m_name, name);
     if (m_force < 0)
