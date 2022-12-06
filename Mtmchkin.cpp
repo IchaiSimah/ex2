@@ -19,6 +19,7 @@ void Mtmchkin::playNextCard(){
     if(m_actualCard == m_numOfCards){
         m_actualCard = 0;
     }
+    m_player.printInfo();
 }
 
 bool Mtmchkin::isOver() const{
