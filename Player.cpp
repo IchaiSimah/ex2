@@ -118,5 +118,5 @@ bool Player::pay(int coinsToPay){
     return false;
 }
 int Player::getAttackStrength() const{
-    return m_force;
+    return m_force + m_level;
 }
