@@ -4,7 +4,7 @@
 Card::Card(CardType type, const CardStats &stats) : m_effect(type),
                                                     m_stats(stats)
 {
-};
+}
 
 void Card::applyEncounter(Player &player) const
 {
