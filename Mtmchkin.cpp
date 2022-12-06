@@ -8,6 +8,9 @@ Mtmchkin::Mtmchkin(const char* playerName, const Card* cardsArray, int numOfCard
         m_cards[i]=cardsArray[i];
     }
 }
+Mtmchkin::~Mtmchkin(){
+    delete[] m_cards;
+}
 
 void Mtmchkin::playNextCard(){
     m_cards[m_actualCard].printInfo();
