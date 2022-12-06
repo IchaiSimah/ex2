@@ -20,6 +20,9 @@ void Mtmchkin::playNextCard(){
         m_actualCard = 0;
     }
     m_player.printInfo();
+    if(isOver()){
+        printBattleResult(getGameStatus() == GameStatus::Win);
+    }
 }
 
 bool Mtmchkin::isOver() const{
