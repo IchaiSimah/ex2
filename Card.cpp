@@ -20,6 +20,7 @@ void Card::applyEncounter(Player &player) const
         {
             player.damage(m_stats.hpLossOnDefeat);
         }
+        printBattleResult(player.getAttackStrength() >= m_stats.force);
         break;
     case CardType::Treasure:
         player.addCoins(m_stats.loot);
