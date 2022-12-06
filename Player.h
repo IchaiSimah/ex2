@@ -8,7 +8,7 @@
 const int DEFAULT_STARTING_HP = 100;
 const int DEFAULT_STARTING_FORCE = 5;
 const int DEFAULT_STARTING_LEVEL = 1;
-const int DEFAULT_STARTING_COINS = 100;
+const int DEFAULT_STARTING_COINS = 0;
 const int MAX_LEVEL = 10;
 
 class Player
