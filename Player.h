@@ -5,10 +5,6 @@
 #include <iostream>
 #include "utilities.h"
 
-const int DEFAULT_STARTING_HP = 100;
-const int DEFAULT_STARTING_FORCE = 5;
-const int DEFAULT_STARTING_LEVEL = 1;
-const int DEFAULT_STARTING_COINS = 0;
 const int MAX_LEVEL = 10;
 
 class Player
@@ -150,6 +146,12 @@ public:
     int getAttackStrength() const;
 
 private:
+    const int DEFAULT_STARTING_HP = 100;
+    const int DEFAULT_STARTING_FORCE = 5;
+    const int DEFAULT_STARTING_LEVEL = 1;
+    const int DEFAULT_STARTING_COINS = 0;
+
+
     char *m_name;
     int m_level;
     int m_force;

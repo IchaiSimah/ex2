@@ -33,6 +33,25 @@ public:
    *      An instance of Mtmchkin
    */
   Mtmchkin(const char *playerName, const Card *cardsArray, int numOfCards);
+
+  /*
+   * copy C'tor of Mtmchkin class
+   *
+   * @param other - the copied Mtmchkin.
+   * @return
+   *      A new instance of Mtmchkin.
+   */
+  Mtmchkin(const Mtmchkin &other);
+
+  /*
+   * assignment operator of Mtmchkin class
+   *
+   * @param other - the "copied" Mtmchkin.
+   * @return
+   *      Reference to the assigned Mtmchkin.
+   */
+  Mtmchkin &operator=(const Mtmchkin &other);
+  
   // D'tor of the game
   ~Mtmchkin();
 
@@ -65,6 +84,8 @@ private:
   Player m_player;
   Card *m_cards;
   int m_numOfCards;
-  int m_actualCard = 0;
+  int m_actualCard;
+  
+  const int FIRST_CARD = 0;
 };
 #endif // EX2_GAME_H
