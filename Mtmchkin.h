@@ -4,7 +4,7 @@
 
 #ifndef EX2_GAME_H
 #define EX2_GAME_H
-#include "Card.h"
+#include "Card.h" 
 #include <iostream>
 
 /*
@@ -58,13 +58,12 @@ public:
      */
     GameStatus getGameStatus() const;
 
-    //TODO: complete the Mtmchkin class.
 
 private:
-  Player m_player;
-  Card* m_cards;
-  int m_numOfCards;
-  int m_actualCard = 0;
+  Player m_player; // represents the class player we created in player.h
+  Card* m_cards;  // represents a table of elements of type cards we created in card.h
+  int m_numOfCards; // numOfCards represents the number of elements of our table m_cards
+  int m_actualCard = 0; // actualCard keeps count of what card was previously played and which card of our table will be played next
 };
 
 
